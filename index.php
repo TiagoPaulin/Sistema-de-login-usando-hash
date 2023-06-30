@@ -40,6 +40,8 @@
                         $error = $_GET['error'];
                         if($error == 1) {
                             echo "<p>Login ou senha invalidos</p>";
+                        } if($error == 2) {
+                            echo "<p>Acesso negado</p>";
                         }
                     }
                 ?>
