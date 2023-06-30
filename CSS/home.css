@@ -1,0 +1,14 @@
+body {
+    background-color: #232323;
+    font-family: Arial, sans-serif;
+}
+#link{
+    background-color: #8B0000;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+#link:hover{
+    background-color: #b22222;
+}

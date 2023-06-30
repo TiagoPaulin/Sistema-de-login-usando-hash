@@ -1,9 +1,9 @@
 <?php
     include("CONNECTION/connection.php");
 
-    //     if ($_SESSION['LOGGED'] == True) {
-    //     header("Location: home.php");
-    // }
+        if ($_SESSION['LOGGED'] == True) {
+        header("Location: home.php");
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
