@@ -1,10 +1,10 @@
 <?php
     include("../CONNECTION/connection.php");
     $email = $_POST["email"];
-    $verifica_email = "SELECT * FROM dados_usuario WHERE USER_EMAIL = '$email'";
-    $verifica_email_banco = $mysqli->query($verifica_email);
-    $resultado = mysqli_num_rows($verifica_email_banco);
-    if ($resultado > 0) {
+    $queryEmail = "SELECT * FROM dados_usuario WHERE USER_EMAIL = '$email'";
+    $consulta = $mysqli->query($queryEmail);
+
+    if ($consulta->num_rows > 0) {
         header("Location: cadastro.php?error=1");
     } else {
         $senha = $_POST["senha"];
@@ -13,10 +13,10 @@
             $senha_hash = password_hash($senha, PASSWORD_DEFAULT);
             $nome = $_POST["nome"];
             $data_nascimento = $_POST["data_nascimento"];
-            $comando_insert = "INSERT INTO 
+            $queryInsert = "INSERT INTO 
                                 dados_usuario (USER_NAME, USER_EMAIL, USER_PASSWORD, USER_NASCIMENTO) 
                                 VALUES ('$nome', '$email', '$senha_hash', '$data_nascimento')";
-            $insert = $mysqli->query($comando_insert);
+            $insert = $mysqli->query($queryInsert);
             header("Location: ../index.php?mensagem=1");
         } else {
             header("Location: cadastro.php?error=2");
