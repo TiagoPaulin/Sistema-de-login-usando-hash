@@ -6,6 +6,7 @@ function mostrarSenhaLogin() {
         senha.type = "password";
     }
 }
+
 function mostrarSenhaCadastro() {
     let senha = document.getElementById("senha");
     let confirm_senha = document.getElementById("confirmar_senha")

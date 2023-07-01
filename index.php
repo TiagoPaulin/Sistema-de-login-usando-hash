@@ -39,9 +39,11 @@
                     } else if (isset($_GET['error'])) {
                         $error = $_GET['error'];
                         if($error == 1) {
-                            echo "<p>Login ou senha invalidos</p>";
+                            echo "<p>Senha incorrreta, por favor tente novamente</p>";
                         } if($error == 2) {
                             echo "<p>Acesso negado</p>";
+                        } if ($error == 3) {
+                            echo "<p>Email incorreto, por favor tente novamente</p>";
                         }
                     }
                 ?>
