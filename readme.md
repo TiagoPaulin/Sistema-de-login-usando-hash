@@ -1,0 +1,2 @@
+## Sistema simples de login utilizando criptografia hash
+O sistema conecta a interface de usuário com banco de dados utilizando php, contém validações de formulário utilizando Javascript e também verificações de Banco de Dados
