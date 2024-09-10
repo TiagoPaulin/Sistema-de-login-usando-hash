@@ -1,2 +1,0 @@
-## Sistema simples de login utilizando criptografia hash
-Utilizando uma inteface pronta gerada pelo Chatgpt fiz um sistema que conecta a interface de usuário com banco de dados utilizando php, contém validações de formulário utilizando Javascript e também verificações de Banco de Dados.
